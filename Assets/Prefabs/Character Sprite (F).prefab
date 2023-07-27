@@ -1,0 +1,291 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3461182545406980953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3461182545406980952}
+  - component: {fileID: 3461182545406980954}
+  - component: {fileID: -1024018037308427135}
+  m_Layer: 5
+  m_Name: Character Sprite (F)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3461182545406980952
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3461182545406980953}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3461182545406980954
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3461182545406980953}
+  m_CullTransparentMesh: 1
+--- !u!114 &-1024018037308427135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3461182545406980953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a453d5ad8501c2c49b522ebf29d3dd17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAlive: 1
+  isDefeated: 0
+  cantPhysicallyFight: 0
+  cantMelee: 0
+  reasoned: 0
+  FName: Qathy
+  NName: 
+  LName: Watson
+  maxHP: 100
+  currHP: 100
+  maxWill: 100
+  currWill: 100
+  gender: 1
+  bodyParts:
+  - partName: Head
+    HP: 25
+    maxHP: 25
+    parentBelow: 0
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 1
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 0
+  - partName: Neck
+    HP: 25
+    maxHP: 25
+    parentBelow: 0
+    parentAbove: 1
+    isDestroyed: 0
+    deathWhenDestroyed: 1
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 0
+  - partName: Upper Torso
+    HP: 100
+    maxHP: 100
+    parentBelow: 0
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 1
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 0
+  - partName: Lower Torso
+    HP: 100
+    maxHP: 100
+    parentBelow: 0
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 1
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 0
+  - partName: Left Upper Arm
+    HP: 50
+    maxHP: 50
+    parentBelow: 1
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 0
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 0
+  - partName: Left Forearm
+    HP: 50
+    maxHP: 50
+    parentBelow: 1
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 0
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 0
+  - partName: Left Hand
+    HP: 25
+    maxHP: 25
+    parentBelow: 0
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 0
+    injuries: []
+    usedForAttacking: 1
+    usedForMovement: 0
+  - partName: Right Upper Arm
+    HP: 50
+    maxHP: 50
+    parentBelow: 1
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 0
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 0
+  - partName: Right Forearm
+    HP: 50
+    maxHP: 50
+    parentBelow: 1
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 0
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 0
+  - partName: Right Hand
+    HP: 25
+    maxHP: 25
+    parentBelow: 0
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 0
+    injuries: []
+    usedForAttacking: 1
+    usedForMovement: 0
+  - partName: Left Thigh
+    HP: 50
+    maxHP: 50
+    parentBelow: 1
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 0
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 0
+  - partName: Left Leg
+    HP: 50
+    maxHP: 50
+    parentBelow: 1
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 0
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 0
+  - partName: Left Foot
+    HP: 25
+    maxHP: 25
+    parentBelow: 0
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 0
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 1
+  - partName: Right Thigh
+    HP: 50
+    maxHP: 50
+    parentBelow: 1
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 0
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 0
+  - partName: Right Leg
+    HP: 50
+    maxHP: 50
+    parentBelow: 1
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 0
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 0
+  - partName: Right Foot
+    HP: 25
+    maxHP: 25
+    parentBelow: 0
+    parentAbove: 0
+    isDestroyed: 0
+    deathWhenDestroyed: 0
+    injuries: []
+    usedForAttacking: 0
+    usedForMovement: 1
+  stats:
+    DEX: 0
+    ACC: 0
+  weapons:
+  - name: 
+    attackName: 
+    attackSound: {fileID: 0}
+    missSound: {fileID: 0}
+    reloadSound: {fileID: 0}
+    failedReloadSound: {fileID: 0}
+    weaponType: 0
+    DAM: 0
+    ACC: 0
+    burst: 0
+    projectilePerShot: 0
+    isMelee: 0
+    usesAmmo: 0
+    currAmmo: 0
+    maxAmmo: 0
+  - name: 
+    attackName: 
+    attackSound: {fileID: 0}
+    missSound: {fileID: 0}
+    reloadSound: {fileID: 0}
+    failedReloadSound: {fileID: 0}
+    weaponType: 0
+    DAM: 0
+    ACC: 0
+    burst: 0
+    projectilePerShot: 0
+    isMelee: 0
+    usesAmmo: 0
+    currAmmo: 0
+    maxAmmo: 0
+  - name: 
+    attackName: 
+    attackSound: {fileID: 0}
+    missSound: {fileID: 0}
+    reloadSound: {fileID: 0}
+    failedReloadSound: {fileID: 0}
+    weaponType: 0
+    DAM: 0
+    ACC: 0
+    burst: 0
+    projectilePerShot: 0
+    isMelee: 0
+    usesAmmo: 0
+    currAmmo: 0
+    maxAmmo: 0
+  equipedWeapon: 0
+  body: {fileID: 7654503672978173891, guid: 377314425a7336b4290c177130dcc7db, type: 3}
+  portrait: {fileID: 6357311859693335244, guid: e66990b634fab6d4d8bc2cf7d9e83f23, type: 3}
+  skinColor: {r: 0, g: 0, b: 0, a: 0}
+  hairColor: {r: 0, g: 0, b: 0, a: 0}
+  shirtColor: {r: 0, g: 0, b: 0, a: 0}
+  age: 0
+  birthday: 
+  bloodTpye: 
